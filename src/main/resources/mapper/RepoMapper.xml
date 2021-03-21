@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.server.mapper.RepoMapper">
+
+    <resultMap id="BaseResultMap" type="com.server.pojo.Repo">
+            <id property="repoid" column="RepoId" jdbcType="INTEGER"/>
+            <result property="info" column="info" jdbcType="VARCHAR"/>
+            <result property="managerid" column="managerId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        RepoId,info,managerId
+    </sql>
+</mapper>
